@@ -31,3 +31,36 @@ Extensive data preprocessing was performed to prepare the dataset for model buil
 #### Logistic Regression (LR)
 
 Logistic Regression was selected as a baseline model due to its simplicity and interpretability. It was trained on the preprocessed dataset to set a benchmark for the model's performance.
+
+#### Support Vector Machine (SVM)
+
+The Support Vector Machine model was implemented to see if a more complex, non-linear model could improve predictive performance over Logistic Regression.
+
+### 3. Model Evaluation
+
+The models were evaluated based on **Accuracy**, **Precision**, **Recall**, and **F1-Score**. Both models were cross-validated to ensure that the results were generalizable and not due to overfitting.
+
+## Results
+
+| Metric       | Logistic Regression | Support Vector Machine |
+|--------------|---------------------|-------------------------|
+| Accuracy     | 0.78                | 0.82                   |
+| Precision    | 0.80                | 0.84                   |
+| Recall       | 0.75                | 0.78                   |
+| F1-Score     | 0.77                | 0.81                   |
+
+Based on the above metrics, **SVM outperformed Logistic Regression** slightly in terms of accuracy and other metrics, making it the preferred model for this classification problem.
+
+## Conclusion
+
+- **SVM performed better** than Logistic Regression, which suggests that the relationship between the wine’s physicochemical properties and its quality is likely non-linear.
+- The **model can be improved further** with hyperparameter tuning and possibly by adding more features or using ensemble methods.
+
+
+## Technology Stack
+
+- **Python Libraries**: Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn
+- **Machine Learning Algorithms**: Logistic Regression, Support Vector Machine (SVM)
+
+  
+This project demonstrates the process of building, evaluating, and interpreting machine learning models to solve real-world classification problems, like predicting wine quality.
